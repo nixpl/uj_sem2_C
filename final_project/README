@@ -1,0 +1,59 @@
+[EN]
+Subject: C Language Course Final Project (Second Semester).
+
+Brief project description:
+The project is a console application designed for managing books in a library. The application features a menu that allows navigation between two tables. The first table is the main table (Library table), which contains information about the identifier, title, author, and availability of each book. This table can be sorted according to various criteria, new books can be added, availability status can be changed, and existing entries can be deleted. After setting the book's status to "borrowed," the book will appear in the second table (On Loan table), which includes information about the identifier, title, and author of the book, the identifier of the borrowing person, and the borrowing period with automatically set start date.
+
+This program was intended to utilize the following concepts:
+
+Object-oriented programming:
+
+1. Classes
+- Constructors, destructors
+- Copy constructor -> declared, for example, in the Book class
+- Friend declaration -> I_Printable, Menu
+- Inheritance -> e.g., On_Loan inherits from Library
+- Polymorphism -> e.g., print() in all classes derived from I_Printable
+- Abstract class -> I_Printable, Menu
+- Pure virtual methods -> I_Printable
+
+2. STL (Standard Template Library):
+- Templates (e.g., vector, array) -> throughout
+- Iterators -> for printing tables
+- Algorithms -> sorting tables
+
+3. C++:
+- Range-based for loop -> e.g., in the save_vec() function
+- Custom class template (or function) - optional
+- Operator overloading -> I_printable
+- Exceptions -> wherever user input is involved
+- Header file (.h) with method declarations and .cpp with method definitions - link
+
+[PL]
+Temat: Projekt zaliczeniowy z przedmiotu: język C (drugi semestr).
+
+Krótki opis projektu:
+Projekt to aplikacja konsolowa służąca do zarządzania książkami w bibliotece. Aplikacja posiada menu umożliwiające nawigację pomiędzy dwoma tabelami. Pierwsza tabela to tabela główna (Library table), która zawiera informacje o identyfikatorze, tytule, autorze i dostępności książki. Można sortować tę tabelę według różnych kryteriów, dodawać nowe książki, zmieniać status dostępności oraz usuwać istniejące wpisy. Po ustawieniu statusu książki na "wypożyczona", książka pojawi się w drugiej tabeli (On Loan table), która zawiera informacje o identyfikatorze, tytule i autorze książki, identyfikatorze osoby wypożyczającej oraz okresie wypożyczenia z automatycznie ustawioną datą początkową.
+
+Program ten miał wykorzystywać zagadnienia:
+1. Projekt obiektowy:
+- klasy
+- konstruktory, destruktory
+- konstruktor kopiujacy -> zadeklarowany np w klasie Book
+- deklaracja przyjaciela -> I_Printable, Menu
+- dziedziczenie -> np. On_Loan dzidziczy z Library
+- polimorfizm -> np. print() we wszystkich klasach wywodzacych sie z I_Printable
+- klasa abstrakcyjna -> I_Printable, Menu
+- czysto wirtualne metody -> I_Printable
+
+2. STL
+- szablony (np. vector , array) -> wszedzie
+- iteratory -> wypisywanie tabelki
+- algorytmy -> sortowanie tableki
+
+3. C++
+- zakresowa petla for -> np. funkcja save_vec()
+- wlasny szablon klasy (lub funkcji) - niekonieczne 
+- przeciazanie operatorów -> I_printable
+- wyjatki -> wszedzie gdzie cos wprowadza uzytkownik
+- plik .h z deklaracja i .cpp z definicja metod - linke
